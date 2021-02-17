@@ -1,0 +1,317 @@
+@charset "UTF-8";
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+	height: 80px;
+	width: 100%;
+    z-index: 9999;
+}
+label.logo {
+	color: #1687a7;
+	font-size: 35px;
+	line-height: 80px;	
+	padding: 0 100px;
+	font-weight: bold;
+    z-index: 9999;
+}
+nav ul {
+	float: right;
+	margin-right: 20px;
+    z-index: 9999;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+    z-index: 9999;
+}
+nav ul li a {
+	color: rgb(255, 255, 255);
+	font-size: 17px;
+	font-weight: bold;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+
+.account svg{
+    position: relative;
+    top: 13px;
+    width: 34px !important;
+}
+
+
+#check {
+	display: none;
+}
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn {
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: #1687a7;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+
+
+.imagem{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 800px;
+	z-index: 9999;
+}
+
+.imagem img {
+	animation: hello 7s alternate;
+	animation-iteration-count: infinite;
+	width: 944px !important;
+	z-index: 9999;
+}
+
+.fundo {
+    width: auto;
+    text-align: center;
+    padding: 40px 20px;
+	margin-top: -1000px;
+	margin-left: -100px;
+
+}
+.fundo img {
+    max-width: 101%;
+}
+
+
+
+
+
+.cards {
+	display: flex;
+	margin: 0 auto;
+	margin-top: 100px;
+	justify-content: space-evenly;
+	width: 1800px;
+	height: 800px;
+}
+
+.card{
+	display: flex;
+	align-items: center;
+	width: 680px;
+	flex-direction: row;
+	height: 340px;
+	background: rgb(255, 255, 255);
+	transition: all .5s;
+}
+
+.card:hover{
+	background: rgb(245, 245, 245);
+	transform: scale(1.02);
+}
+
+.card img{
+	width: 417px !important;
+	height: 250px !important;
+	margin-left: -64px;
+}
+
+.text-card {
+	margin-left: -20px;
+}
+
+.text-card h1 {
+	color: #1687a7;
+}
+
+
+
+.mais {
+	padding: 15px;
+	width: 150px;
+	background: #1687a7;
+	color: white;
+	font-weight: bold;
+	border-radius: 3px;
+	margin-top: 10px;
+	transform: scale(1.02);
+}
+
+button:hover{
+	transform: scale(1.02);
+}
+
+.lottiesession {
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.texto1 {
+	display: flex;
+	margin-top: -300px;
+	align-items: center;
+	justify-content: center;
+}
+
+.texto-lottie1 h1{
+	font-size: 21pt;
+	color: #1687a7;
+}
+
+.texto-lottie1 p{
+	font-size: 17pt;
+}
+
+.texto-lottie1{
+	width: 400px;
+	margin-left: 30px;
+}
+
+
+.lottiesession {
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.texto2 {
+	display: flex;
+	margin-top: 100px;
+	align-items: center;
+	justify-content: center;
+}
+
+.texto-lottie2 h1{
+	font-size: 21pt;
+	color: #1687a7;
+}
+
+.texto-lottie2 p{
+	font-size: 17pt;
+}
+
+.texto-lottie2{
+	width: 400px;
+	margin-left: 30px;
+}
+
+.lottiesession {
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.texto3 {
+	display: flex;
+	margin-top: 100px;
+	align-items: center;
+	justify-content: center;
+}
+
+.texto-lottie3 h1{
+	font-size: 21pt;
+	color: #1687a7;
+}
+
+.texto-lottie3 p{
+	font-size: 17pt;
+}
+
+.texto-lottie3{
+	width: 400px;
+	margin-left: 30px;
+}
+
+.mobile {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+.hand {
+	display: flex;
+	margin-bottom: -100px;
+}
+
+
+
+.rodape {
+	display: flex;
+	margin-top: 100px;
+	align-items: center;
+	background-color: #1687a7;
+	width: 100%;
+	padding: 25px;
+}
+
+.rodape h1 {
+	color: white;
+}
